@@ -1,0 +1,60 @@
+{
+  "title": "Senior Software Engineer",
+  "company": "TechCorp Inc.",
+  "location": "San Francisco, CA",
+  "type": "Full-time",
+  "experience_level": "Senior",
+  "description": "We are looking for a Senior Software Engineer to join our growing team. You will be responsible for designing, developing, and maintaining scalable web applications using modern technologies. The ideal candidate will have strong experience in full-stack development and cloud technologies.",
+  "requirements": [
+    "Bachelor's degree in Computer Science or related field",
+    "5+ years of experience in software development",
+    "Strong proficiency in Python and JavaScript",
+    "Experience with React and Node.js",
+    "Knowledge of cloud platforms (AWS, Azure, or GCP)",
+    "Experience with databases (PostgreSQL, MongoDB)",
+    "Familiarity with Docker and containerization",
+    "Experience with CI/CD pipelines",
+    "Strong problem-solving and communication skills",
+    "Experience with Agile/Scrum methodologies"
+  ],
+  "preferred_qualifications": [
+    "Master's degree in Computer Science",
+    "Experience with microservices architecture",
+    "Knowledge of Kubernetes",
+    "Experience with machine learning",
+    "Previous leadership experience",
+    "Open source contributions"
+  ],
+  "responsibilities": [
+    "Design and develop scalable web applications",
+    "Collaborate with cross-functional teams",
+    "Mentor junior developers",
+    "Participate in code reviews",
+    "Implement best practices and coding standards",
+    "Troubleshoot and debug applications",
+    "Stay up-to-date with emerging technologies"
+  ],
+  "benefits": [
+    "Competitive salary ($120,000 - $180,000)",
+    "Health, dental, and vision insurance",
+    "401(k) with company matching",
+    "Flexible work arrangements",
+    "Professional development opportunities",
+    "Stock options",
+    "Unlimited PTO"
+  ],
+  "company_info": {
+    "size": "500-1000 employees",
+    "industry": "Technology",
+    "founded": "2015",
+    "description": "TechCorp Inc. is a leading technology company focused on building innovative solutions for businesses worldwide."
+  },
+  "application_deadline": "2024-03-01",
+  "posted_date": "2024-01-15",
+  "remote_friendly": true,
+  "salary_range": {
+    "min": 120000,
+    "max": 180000,
+    "currency": "USD"
+  }
+}

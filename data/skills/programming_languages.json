@@ -1,0 +1,142 @@
+{
+  "category": "Programming Languages",
+  "description": "Programming languages and their popularity scores",
+  "last_updated": "2024-01-01T00:00:00Z",
+  "skills": [
+    {
+      "name": "Python",
+      "popularity_score": 95,
+      "demand_level": "High",
+      "difficulty": "Medium",
+      "description": "Versatile programming language used for web development, data science, AI, and automation",
+      "related_skills": ["Django", "Flask", "Pandas", "NumPy", "TensorFlow"],
+      "industries": ["Technology", "Finance", "Healthcare", "Education", "Research"]
+    },
+    {
+      "name": "JavaScript",
+      "popularity_score": 92,
+      "demand_level": "High",
+      "difficulty": "Medium",
+      "description": "Dynamic programming language primarily used for web development and server-side applications",
+      "related_skills": ["React", "Node.js", "Vue.js", "Angular", "Express"],
+      "industries": ["Technology", "E-commerce", "Media", "Gaming", "Finance"]
+    },
+    {
+      "name": "Java",
+      "popularity_score": 88,
+      "demand_level": "High",
+      "difficulty": "Medium",
+      "description": "Object-oriented programming language widely used for enterprise applications and Android development",
+      "related_skills": ["Spring", "Hibernate", "Maven", "JUnit", "Android"],
+      "industries": ["Technology", "Finance", "Healthcare", "Government", "Education"]
+    },
+    {
+      "name": "C++",
+      "popularity_score": 75,
+      "demand_level": "Medium",
+      "difficulty": "High",
+      "description": "High-performance programming language used for system programming, game development, and embedded systems",
+      "related_skills": ["STL", "Boost", "Qt", "OpenGL", "CUDA"],
+      "industries": ["Gaming", "Automotive", "Aerospace", "Finance", "Research"]
+    },
+    {
+      "name": "C#",
+      "popularity_score": 82,
+      "demand_level": "High",
+      "difficulty": "Medium",
+      "description": "Modern programming language developed by Microsoft, used for Windows applications and web development",
+      "related_skills": [".NET", "ASP.NET", "Entity Framework", "Xamarin", "Unity"],
+      "industries": ["Technology", "Gaming", "Finance", "Healthcare", "Government"]
+    },
+    {
+      "name": "PHP",
+      "popularity_score": 70,
+      "demand_level": "Medium",
+      "difficulty": "Low",
+      "description": "Server-side scripting language primarily used for web development",
+      "related_skills": ["Laravel", "Symfony", "WordPress", "Drupal", "CodeIgniter"],
+      "industries": ["Technology", "E-commerce", "Media", "Education", "Non-profit"]
+    },
+    {
+      "name": "Ruby",
+      "popularity_score": 65,
+      "demand_level": "Medium",
+      "difficulty": "Low",
+      "description": "Dynamic programming language known for its simplicity and productivity",
+      "related_skills": ["Ruby on Rails", "Sinatra", "RSpec", "Capistrano", "Jekyll"],
+      "industries": ["Technology", "E-commerce", "Media", "Startups", "Education"]
+    },
+    {
+      "name": "Go",
+      "popularity_score": 78,
+      "demand_level": "High",
+      "difficulty": "Medium",
+      "description": "Modern programming language developed by Google, known for its simplicity and performance",
+      "related_skills": ["Gin", "Echo", "GORM", "Docker", "Kubernetes"],
+      "industries": ["Technology", "Cloud Computing", "DevOps", "Microservices", "Blockchain"]
+    },
+    {
+      "name": "Rust",
+      "popularity_score": 72,
+      "demand_level": "Medium",
+      "difficulty": "High",
+      "description": "Systems programming language focused on safety, speed, and concurrency",
+      "related_skills": ["Cargo", "Tokio", "Serde", "Actix", "Wasm"],
+      "industries": ["Technology", "Blockchain", "Gaming", "System Programming", "WebAssembly"]
+    },
+    {
+      "name": "Swift",
+      "popularity_score": 80,
+      "demand_level": "High",
+      "difficulty": "Medium",
+      "description": "Programming language developed by Apple for iOS, macOS, and other Apple platforms",
+      "related_skills": ["UIKit", "SwiftUI", "Core Data", "Combine", "Alamofire"],
+      "industries": ["Technology", "Mobile Development", "Gaming", "Healthcare", "Finance"]
+    },
+    {
+      "name": "Kotlin",
+      "popularity_score": 85,
+      "demand_level": "High",
+      "difficulty": "Medium",
+      "description": "Modern programming language that runs on the Java Virtual Machine, used for Android development",
+      "related_skills": ["Android", "Spring Boot", "Ktor", "Coroutines", "Jetpack Compose"],
+      "industries": ["Technology", "Mobile Development", "E-commerce", "Gaming", "Finance"]
+    },
+    {
+      "name": "Scala",
+      "popularity_score": 68,
+      "demand_level": "Medium",
+      "difficulty": "High",
+      "description": "Functional programming language that runs on the Java Virtual Machine",
+      "related_skills": ["Akka", "Play Framework", "Spark", "SBT", "Cats"],
+      "industries": ["Technology", "Big Data", "Finance", "E-commerce", "Research"]
+    },
+    {
+      "name": "R",
+      "popularity_score": 77,
+      "demand_level": "High",
+      "difficulty": "Medium",
+      "description": "Programming language and environment for statistical computing and graphics",
+      "related_skills": ["ggplot2", "dplyr", "Shiny", "RMarkdown", "Tidyverse"],
+      "industries": ["Research", "Finance", "Healthcare", "Education", "Data Science"]
+    },
+    {
+      "name": "MATLAB",
+      "popularity_score": 60,
+      "demand_level": "Medium",
+      "difficulty": "Medium",
+      "description": "High-level programming language and interactive environment for numerical computation",
+      "related_skills": ["Simulink", "Signal Processing", "Image Processing", "Control Systems", "Machine Learning"],
+      "industries": ["Research", "Engineering", "Academia", "Automotive", "Aerospace"]
+    },
+    {
+      "name": "SQL",
+      "popularity_score": 90,
+      "demand_level": "High",
+      "difficulty": "Low",
+      "description": "Structured Query Language used for managing and manipulating relational databases",
+      "related_skills": ["MySQL", "PostgreSQL", "SQL Server", "Oracle", "SQLite"],
+      "industries": ["Technology", "Finance", "Healthcare", "E-commerce", "Government"]
+    }
+  ]
+}

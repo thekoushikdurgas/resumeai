@@ -1,0 +1,280 @@
+# Complete Project Requirements
+# requirements.txt - All dependencies for Resume/CV AI Application
+
+# Core Streamlit and Web Framework
+streamlit>=1.29.0
+streamlit-authenticator>=0.2.3
+streamlit-option-menu>=0.3.6
+
+# Data Processing and Analysis
+pandas>=2.1.0
+numpy>=1.24.0
+plotly>=5.17.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Document Processing
+PyPDF2>=3.0.1
+pdfplumber>=0.9.0
+python-docx>=1.1.0
+docx2txt>=0.8
+python-magic>=0.4.27
+
+# OCR (Optional - for image-based PDFs)
+pytesseract>=0.3.10
+pdf2image>=1.16.3
+Pillow>=10.1.0
+
+# AI and Machine Learning
+google-generativeai>=0.3.2
+openai>=1.3.0
+anthropic>=0.7.0
+sentence-transformers>=2.2.2
+scikit-learn>=1.3.2
+transformers>=4.35.0
+torch>=2.1.0
+
+# Natural Language Processing
+nltk>=3.8.1
+spacy>=3.7.0
+textstat>=0.7.3
+langdetect>=1.0.9
+
+# Text Processing and Analysis
+fuzzywuzzy>=0.18.0
+python-Levenshtein>=0.23.0
+wordcloud>=1.9.2
+
+# Data Validation and Models
+pydantic>=2.4.0
+marshmallow>=3.20.0
+jsonschema>=4.19.0
+
+# File Handling and Storage
+# pathlib2>=2.3.7  # Only needed for Python < 3.4
+python-dotenv>=1.0.0
+# configparser>=6.0.0  # Built-in module in Python 3.2+
+
+# HTTP and API Clients
+requests>=2.31.0
+httpx>=0.25.0
+aiohttp>=3.8.6
+
+# Date and Time Processing
+python-dateutil>=2.8.2
+pytz>=2023.3
+pendulum>=2.1.2
+
+# Cryptography and Security
+cryptography>=41.0.0
+passlib>=1.7.4
+bcrypt>=4.0.1
+
+# Caching and Performance
+redis>=5.0.1
+diskcache>=5.6.3
+joblib>=1.3.0
+
+# Database (Optional)
+sqlalchemy>=2.0.0
+alembic>=1.12.0
+psycopg2-binary>=2.9.0
+
+# Email Services (Optional)
+# smtplib2>=0.2.1  # smtplib is built-in, smtplib2 doesn't exist
+email-validator>=2.1.0
+
+# Logging and Monitoring
+loguru>=0.7.2
+structlog>=23.2.0
+
+# Testing Framework
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.0
+pytest-streamlit>=1.0.0
+
+# Code Quality and Formatting
+black>=23.9.0
+flake8>=6.1.0
+isort>=5.12.0
+mypy>=1.6.0
+pre-commit>=3.4.0
+
+# Documentation
+mkdocs>=1.5.0
+mkdocs-material>=9.4.0
+sphinx>=7.2.0
+
+# Deployment and DevOps
+gunicorn>=21.2.0
+uvicorn>=0.24.0
+docker>=6.1.0
+
+# Environment Management
+python-decouple>=3.8
+environs>=10.0.0
+
+# Utilities
+tqdm>=4.66.0
+rich>=13.6.0
+click>=8.1.0
+typer>=0.9.0
+
+# Data Export and Import
+xlsxwriter>=3.1.0
+openpyxl>=3.1.0
+tabulate>=0.9.0
+
+# Image Processing (Extended)
+opencv-python>=4.8.0
+scikit-image>=0.21.0
+
+# PDF Generation (Advanced)
+reportlab>=4.0.0
+weasyprint>=60.0
+
+# Statistical Analysis
+scipy>=1.11.0
+statsmodels>=0.14.0
+
+# Visualization Extensions
+bokeh>=3.3.0
+altair>=5.1.0
+streamlit-plotly-events>=0.0.6
+
+# Form Handling
+streamlit-extras>=0.3.0
+streamlit-aggrid>=0.3.4
+
+# File Upload Enhancements
+# streamlit-file-browser>=0.0.1  # Package may not exist
+# streamlit-drag-and-drop>=0.0.3  # Package may not exist
+
+# UI/UX Enhancements
+streamlit-lottie>=0.0.5
+streamlit-card>=0.0.61
+streamlit-timeline>=0.0.2
+
+# Performance Monitoring
+psutil>=5.9.0
+memory-profiler>=0.61.0
+
+# Async Support
+asyncio-mqtt>=0.16.0
+asyncpg>=0.29.0
+
+# Data Visualization
+wordcloud>=1.9.2
+networkx>=3.2.0
+
+# Web Scraping (Optional)
+beautifulsoup4>=4.12.0
+scrapy>=2.11.0
+
+# API Documentation
+fastapi>=0.104.0
+swagger-ui-bundle>=0.0.9
+
+# Development Tools
+ipython>=8.16.0
+jupyter>=1.0.0
+notebook>=7.0.0
+
+# Internationalization
+babel>=2.13.0
+# gettext>=0.1.0  # Built-in Python module
+
+# Calendar and Scheduling
+schedule>=1.2.0
+python-crontab>=3.0.0
+
+# Configuration Management
+hydra-core>=1.3.0
+omegaconf>=2.3.0
+
+# Template Engine
+jinja2>=3.1.0
+mako>=1.2.0
+
+# Color and Theming
+# colorsys is a built-in Python module, no installation needed
+matplotlib-venn>=0.11.0
+
+# Geographic Data (if needed)
+geopandas>=0.14.0
+folium>=0.15.0
+
+# Version Control Integration
+gitpython>=3.1.0
+pygithub>=1.59.0
+
+# Mobile Support
+# streamlit-mobile>=0.0.1  # Package may not exist
+
+# Audio Processing (for future voice features)
+pydub>=0.25.0
+speech-recognition>=3.10.0
+
+# Advanced NLP
+spacy-transformers>=1.3.0
+textblob>=0.17.0
+
+# Social Media Integration
+tweepy>=4.14.0
+python-linkedin-v2>=2.0.0
+
+# Cloud Storage
+boto3>=1.29.0
+google-cloud-storage>=2.10.0
+azure-storage-blob>=12.19.0
+
+# Message Queues
+celery>=5.3.0
+redis>=5.0.0
+
+# Backup and Archive
+# zipfile38>=0.0.3  # Built-in zipfile module available in Python 3.6+
+# tarfile>=0.5.0  # Built-in Python module
+
+# System Information
+# platform>=1.0.8  # Built-in Python module
+# sys>=0.0.0  # Built-in Python module
+
+# Error Tracking
+sentry-sdk>=1.38.0
+bugsnag>=4.6.0
+
+# Feature Flags
+flagsmith>=3.4.0
+launchdarkly-server-sdk>=8.2.0
+
+# Analytics
+mixpanel>=4.10.0
+google-analytics-data>=0.17.0
+
+# QR Code Generation
+qrcode>=7.4.2
+python-barcode>=0.15.1
+
+# PDF Security
+pypdf>=3.17.0
+pdf-redactor>=0.3.7
+
+# Advanced Caching
+pymemcache>=4.0.0
+django-cache-machine>=1.2.0
+
+# Message Broadcasting
+websockets>=12.0
+# socketio>=5.9.0  # Should be python-socketio
+python-socketio>=5.9.0
+
+# Code Analysis
+bandit>=1.7.0
+safety>=2.3.0
+
+# License Compliance
+pip-licenses>=4.3.0
+license-check>=1.1.0

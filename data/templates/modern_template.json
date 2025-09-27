@@ -1,0 +1,164 @@
+{
+  "name": "Modern",
+  "description": "Contemporary resume template with visual elements and modern design",
+  "category": "Modern",
+  "version": "1.0.0",
+  "author": "Resume AI Team",
+  "created_at": "2024-01-01T00:00:00Z",
+  "updated_at": "2024-01-01T00:00:00Z",
+  "preview_image": "modern_preview.png",
+  "features": [
+    "Visual hierarchy",
+    "Color accents",
+    "Modern fonts",
+    "Creative layout",
+    "Eye-catching design"
+  ],
+  "sections": [
+    {
+      "name": "contact",
+      "title": "Contact",
+      "required": true,
+      "order": 1,
+      "fields": [
+        "name",
+        "email",
+        "phone",
+        "location",
+        "linkedin",
+        "github",
+        "website"
+      ]
+    },
+    {
+      "name": "summary",
+      "title": "About Me",
+      "required": true,
+      "order": 2,
+      "fields": [
+        "summary"
+      ]
+    },
+    {
+      "name": "experience",
+      "title": "Experience",
+      "required": true,
+      "order": 3,
+      "fields": [
+        "title",
+        "company",
+        "location",
+        "start_date",
+        "end_date",
+        "description"
+      ]
+    },
+    {
+      "name": "education",
+      "title": "Education",
+      "required": true,
+      "order": 4,
+      "fields": [
+        "degree",
+        "school",
+        "location",
+        "graduation_date",
+        "gpa"
+      ]
+    },
+    {
+      "name": "skills",
+      "title": "Skills",
+      "required": true,
+      "order": 5,
+      "fields": [
+        "skills"
+      ]
+    },
+    {
+      "name": "projects",
+      "title": "Projects",
+      "required": false,
+      "order": 6,
+      "fields": [
+        "name",
+        "description",
+        "technologies",
+        "url"
+      ]
+    },
+    {
+      "name": "certifications",
+      "title": "Certifications",
+      "required": false,
+      "order": 7,
+      "fields": [
+        "name",
+        "issuer",
+        "date"
+      ]
+    }
+  ],
+  "formatting": {
+    "font_family": "Calibri",
+    "font_size": 11,
+    "line_spacing": 1.2,
+    "margins": {
+      "top": 0.8,
+      "bottom": 0.8,
+      "left": 0.8,
+      "right": 0.8
+    },
+    "colors": {
+      "primary": "#e74c3c",
+      "secondary": "#f39c12",
+      "accent": "#9b59b6",
+      "text": "#2c3e50",
+      "background": "#ffffff"
+    },
+    "spacing": {
+      "section_spacing": 25,
+      "item_spacing": 15,
+      "line_spacing": 1.2
+    }
+  },
+  "layout": {
+    "type": "two_column",
+    "header_height": 120,
+    "section_headers": {
+      "style": "colored_bar",
+      "font_size": 16,
+      "font_weight": "bold",
+      "color": "#e74c3c",
+      "background_color": "#ecf0f1"
+    },
+    "contact_info": {
+      "layout": "vertical",
+      "separator": " • "
+    }
+  },
+  "customization": {
+    "allow_color_changes": true,
+    "allow_font_changes": true,
+    "allow_layout_changes": true,
+    "allow_section_reordering": true,
+    "allow_section_hiding": true
+  },
+  "compatibility": {
+    "ats_systems": [
+      "Workday",
+      "BambooHR",
+      "Greenhouse"
+    ],
+    "formats": [
+      "pdf",
+      "docx",
+      "html"
+    ]
+  },
+  "usage_stats": {
+    "downloads": 890,
+    "rating": 4.6,
+    "reviews": 98
+  }
+}

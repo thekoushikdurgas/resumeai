@@ -1,0 +1,100 @@
+{
+  "contact": {
+    "name": "John Doe",
+    "email": "john.doe@email.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "San Francisco, CA",
+    "linkedin": "https://linkedin.com/in/johndoe",
+    "github": "https://github.com/johndoe",
+    "website": "https://johndoe.dev"
+  },
+  "summary": "Experienced Software Engineer with 5+ years of experience in full-stack development, specializing in Python, JavaScript, and cloud technologies. Proven track record of delivering scalable web applications and leading cross-functional teams.",
+  "experience": [
+    {
+      "title": "Senior Software Engineer",
+      "company": "TechCorp Inc.",
+      "location": "San Francisco, CA",
+      "start_date": "2021-01-01",
+      "end_date": "2024-01-01",
+      "description": "Led development of microservices architecture serving 1M+ users. Implemented CI/CD pipelines reducing deployment time by 60%. Mentored 3 junior developers and established coding standards."
+    },
+    {
+      "title": "Software Engineer",
+      "company": "StartupXYZ",
+      "location": "San Francisco, CA",
+      "start_date": "2019-06-01",
+      "end_date": "2020-12-31",
+      "description": "Developed RESTful APIs using Python/Django. Built responsive frontend components with React. Collaborated with product team to define technical requirements."
+    },
+    {
+      "title": "Junior Developer",
+      "company": "WebSolutions",
+      "location": "San Francisco, CA",
+      "start_date": "2018-01-01",
+      "end_date": "2019-05-31",
+      "description": "Maintained legacy PHP applications. Implemented new features using modern JavaScript frameworks. Participated in code reviews and testing."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "school": "University of California, Berkeley",
+      "location": "Berkeley, CA",
+      "graduation_date": "2017-05-01",
+      "gpa": "3.8"
+    }
+  ],
+  "skills": [
+    "Python",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Django",
+    "PostgreSQL",
+    "AWS",
+    "Docker",
+    "Git",
+    "RESTful APIs",
+    "Microservices",
+    "CI/CD",
+    "Agile/Scrum",
+    "Leadership",
+    "Problem Solving"
+  ],
+  "projects": [
+    {
+      "name": "E-commerce Platform",
+      "description": "Built a full-stack e-commerce platform using React and Django, serving 10,000+ users",
+      "technologies": ["React", "Django", "PostgreSQL", "AWS"],
+      "url": "https://github.com/johndoe/ecommerce-platform"
+    },
+    {
+      "name": "Task Management API",
+      "description": "Developed a RESTful API for task management with authentication and real-time updates",
+      "technologies": ["Python", "FastAPI", "PostgreSQL", "WebSockets"],
+      "url": "https://github.com/johndoe/task-api"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "date": "2022-03-01"
+    },
+    {
+      "name": "Certified Scrum Master",
+      "issuer": "Scrum Alliance",
+      "date": "2021-08-01"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Native"
+    },
+    {
+      "language": "Spanish",
+      "proficiency": "Conversational"
+    }
+  ]
+}
