@@ -1,0 +1,65 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+coverage
+.nyc_output
+test-results
+playwright-report
+playwright/.cache
+
+# next.js
+.next
+out
+.vercel
+
+# production
+build
+dist
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# turbo
+.turbo
+
+# misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# local env files
+.env*.local
+
+# IDE
+.idea
+*.swp
+*.swo
+*~
+
+# Lighthouse
+lighthouse-report.html
+
+# Error logs
+error.txt
+error1.txt
+error2.txt
+error*.txt
+error*.log
+
+# CSS minification
+.css-backup/
+*.min.css
+config.bat
