@@ -1,0 +1,16 @@
+services:
+  resumeai:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: sqlite+aiosqlite:///./data/resume.db
+    volumes:
+      - resume_data:/app/data
+
+volumes:
+  resume_data:

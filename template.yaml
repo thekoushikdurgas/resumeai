@@ -1,0 +1,95 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Resume AI Service for Contact360 — FastAPI + Mangum on Lambda
+
+Globals:
+  Function:
+    Timeout: 120
+    MemorySize: 1024
+    Runtime: python3.11
+
+Parameters:
+  ApiKey:
+    Type: String
+    Description: X-API-Key for service-to-service auth
+    NoEcho: true
+  GeminiApiKey:
+    Type: String
+    Description: Google Gemini API key
+    NoEcho: true
+  DatabaseUrl:
+    Type: String
+    Description: SQLAlchemy async URL (e.g. postgresql+asyncpg://...)
+    NoEcho: true
+  S3BucketName:
+    Type: String
+    Description: S3 bucket for resume assets
+    Default: contact360-resume-assets
+  S3StorageApiUrl:
+    Type: String
+    Description: s3storage API Gateway base URL (no trailing slash)
+    Default: ""
+  S3StorageApiKey:
+    Type: String
+    Description: Optional X-API-Key for s3storage
+    Default: ""
+    NoEcho: true
+
+Resources:
+  ResumeAiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: resume-ai-service
+      CodeUri: .
+      Handler: app.main.handler
+      Description: Resume AI microservice
+      Runtime: python3.11
+      Timeout: 120
+      MemorySize: 1024
+      Environment:
+        Variables:
+          APP_ENV: production
+          API_KEY: !Ref ApiKey
+          GEMINI_API_KEY: !Ref GeminiApiKey
+          DATABASE_URL: !Ref DatabaseUrl
+          S3_BUCKET_NAME: !Ref S3BucketName
+          LAMBDA_S3STORAGE_API_URL: !Ref S3StorageApiUrl
+          LAMBDA_S3STORAGE_API_KEY: !Ref S3StorageApiKey
+          LAMBDA_S3STORAGE_API_TIMEOUT: "30"
+          AI_PROVIDER: gemini
+      Policies:
+        - S3CrudPolicy:
+            BucketName: !Ref S3BucketName
+      Events:
+        ApiRoot:
+          Type: HttpApi
+          Properties:
+            Path: /
+            Method: ANY
+            ApiId: !Ref ResumeHttpApi
+        ApiProxy:
+          Type: HttpApi
+          Properties:
+            Path: /{proxy+}
+            Method: ANY
+            ApiId: !Ref ResumeHttpApi
+      Tags:
+        Service: resume-ai
+        ManagedBy: SAM
+
+  ResumeHttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      Description: HTTP API for Resume AI Service
+      CorsConfiguration:
+        AllowOrigins:
+          - "*"
+        AllowMethods:
+          - "*"
+        AllowHeaders:
+          - "*"
+
+Outputs:
+  ResumeAiUrl:
+    Description: API Gateway endpoint URL
+    Value: !GetAtt ResumeHttpApi.ApiEndpoint

@@ -1,0 +1,37 @@
+version = 0.1
+
+# Windows: `sam build --use-container` often fails with WinError 2 during temp-dir cleanup
+# (Docker + SAM race; see aws/aws-sam-cli issues). Fixes:
+# - Prefer `sam build` without --use-container when Python 3.11 is on PATH (e.g. python.org install).
+# - Or run `sam build --use-container` from WSL2 where container builds are stable.
+# - Ensure Docker Desktop is running; update SAM CLI + Docker; pause AV on %TEMP% if needed.
+
+[default]
+[default.global.parameters]
+stack_name = "resume-ai-stack"
+
+[default.build.parameters]
+cached = true
+parallel = true
+# Set true only when using a proper Python 3.11 on PATH is not an option (then prefer WSL on Windows).
+use_container = false
+
+[default.validate.parameters]
+lint = true
+
+[default.deploy.parameters]
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = true
+region = "us-east-1"
+image_repositories = []
+resolve_s3 = true
+s3_prefix = "resume-ai"
+parameter_overrides = [
+    "ApiKey=CHANGE_ME_API_KEY",
+    "GeminiApiKey=CHANGE_ME_GEMINI",
+    "DatabaseUrl=postgresql+asyncpg://user:pass@host:5432/dbname",
+    "S3BucketName=contact360-resume-assets",
+]
+
+[default.package.parameters]
+resolve_s3 = true

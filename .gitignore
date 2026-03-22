@@ -1,0 +1,6 @@
+.emailapi
+.aws-sam/
+__pycache__/
+*.pyc
+config.bat
+node_modules
